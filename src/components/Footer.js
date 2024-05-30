@@ -1,7 +1,7 @@
-import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import React from 'react';
+import { Box, Stack, Typography } from '@mui/material';
 
-import Logo from "../assets/images/Logo-1.png";
+import Logo from '../assets/images/Logo-1.png';
 
 const Footer = () => {
   return (
@@ -11,8 +11,8 @@ const Footer = () => {
         <Typography variant="h7" mt="2x">
           Developed By: Mohamed Infas
         </Typography>
-        <Typography variant="h6" pb="40px">
-          ALL RIGHT RESERVED
+        <Typography variant="p" pb="40px">
+          All rights reserved
         </Typography>
       </Stack>
     </Box>
