@@ -9,7 +9,7 @@ const Footer = () => {
       <Stack gap="10px" alignItems="center" px="40px" pt="24px">
         <img src={Logo} alt="logo" width="200px" height="60px" />
         <Typography variant="h7" mt="2x">
-          Developed By: Mohamed Infas
+          <strong> Developed with ❤️ by:</strong> Mohamed Infas
         </Typography>
         <Typography variant="p" pb="40px">
           All rights reserved

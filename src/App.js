@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 import './App.css';
@@ -17,8 +17,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/exercise/:id" element={<ExerciseDetail />} />
         </Routes>
-        <Footer />
       </Box>
+      <Footer />
     </>
   );
 };
