@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Pagination } from "@mui/material";
-import { Box, Stack, Typography } from "@mui/material";
+import React, { useEffect, useState } from 'react';
+import { Pagination } from '@mui/material';
+import { Box, Stack, Typography } from '@mui/material';
 
-import { exerciseOptions, fetchData } from "../utils/fetchData";
-import ExerciseCard from "./ExerciseCard";
+import { exerciseOptions, fetchData } from '../utils/fetchData';
+import ExerciseCard from './ExerciseCard';
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -19,16 +19,16 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const paginate = (e, value) => {
     setCurrentPage(value);
 
-    window.scrollTo({ top: 1800, behavior: "smooth" });
+    window.scrollTo({ top: 1800, behavior: 'smooth' });
   };
 
   useEffect(() => {
     const fetchExercisesData = async () => {
       let exercisesData = [];
 
-      if (bodyPart === "all") {
+      if (bodyPart === 'all') {
         exercisesData = await fetchData(
-          "https://exercisedb.p.rapidapi.com/exercises",
+          'https://exercisedb.p.rapidapi.com/exercises',
           exerciseOptions
         );
       } else {
@@ -47,7 +47,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     <Box
       id="exercises"
       sx={{
-        mt: { lg: "110px" },
+        mt: { lg: '110px' },
       }}
       mt="50x"
       p="20px"
@@ -57,7 +57,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       </Typography>
       <Stack
         direction="row"
-        sx={{ gap: { lg: "110px", xs: "50px" } }}
+        sx={{ gap: { lg: '110px', xs: '50px' } }}
         flexWrap="wrap"
         justifyContent="center"
       >
